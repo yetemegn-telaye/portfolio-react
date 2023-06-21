@@ -1,6 +1,13 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:'Inter', sans-serif;
+  font-family: 'Inter', sans-serif;
+}
+
+:root {
+  --dark-color: #0b3954;
+  --main-color: #fefffe;
+  --button-color: #ff6663;
+  --text-color: white;
 }
