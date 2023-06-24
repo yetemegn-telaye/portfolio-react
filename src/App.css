@@ -4,10 +4,86 @@
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
 }
-
+/* body{
+  height: 100vh;
+} */
 :root {
-  --dark-color: #0b3954;
-  --main-color: #fefffe;
-  --button-color: #ff6663;
-  --text-color: white;
+  --dark-color:#19535F;
+  --main-color: #D7C9AA;
+  --button-color: #7B2D26;
+  --light-color: #F0F3F5;
+}
+
+.navbar {
+  background-color: var(--dark-color);
+  border-bottom: 1px solid var(--main-color);
+}
+.navbar-brand{
+  color: var(--light-color) !important;
+}
+.nav-link{
+  color: var(--light-color) !important;
+}
+.nav-link:hover {
+  color: var(--main-color) !important;
+}
+
+.home-container {
+  height: 100vh;
+}
+
+.headline-section{
+  background-color: var(--dark-color);
+}
+
+.headline-intro .sub-title {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 44px;
+  color: var(--light-color);
+  padding-right: 40px;
+}
+
+
+.headline-title {
+  color: var(--main-color);
+  font-family: 'Crete Round', serif;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 82px;
+}
+
+.intro {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--light-color);
+}
+
+.sub-title {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+
+.footer-social-icons {
+  border: 1px solid #dfe1e6;
+}
+
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  40% { border-color: var(--text-color); }
 }
