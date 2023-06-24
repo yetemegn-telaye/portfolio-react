@@ -36,6 +36,16 @@
   background-color: var(--dark-color);
 }
 
+.social-icon:hover {
+  transform: scale(1.4);
+  transition: all 0.3s;
+  cursor: pointer;
+  background-color: var(--button-color);
+  padding: 0.25rem;
+  border-radius: 1rem;
+
+}
+
 .headline-intro .sub-title {
   font-weight: 500;
   font-size: 2rem;
