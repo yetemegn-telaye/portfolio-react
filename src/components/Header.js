@@ -7,7 +7,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => (
   <>
-    <Navbar collapseOnSelect expand="lg" sticky="top" className="p-3">
+    <Navbar collapseOnSelect expand="lg" fixed="top" className="p-3">
       <Container>
         <Navbar.Brand href="#home">Yetemegn L.</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
