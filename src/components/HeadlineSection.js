@@ -43,7 +43,7 @@ const HeadlineSection = () => (
           </div>
         </div>
       </div>
-      <div>
+      <div className="p-0">
         <img src={illustrationHeader} alt="illustration-header" className="img-fluid" />
       </div>
     </div>

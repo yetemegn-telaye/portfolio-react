@@ -1,11 +1,19 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import { Container } from 'react-bootstrap';
-import Button from 'react-bootstrap/Button';
 
 const ContactMe = () => {
-  const formHandler = (event) => {
-    event.preventDefault();
-    alert('You have submitted a form');
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_wrwrx1n', 'template_20a4qgw', form.current, 'l2uDpBhzXwXLjdziX')
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
   };
   return (
     <Container className="contact-section d-flex flex-column flex-md-column flex-lg-row p-5">
@@ -15,38 +23,15 @@ const ContactMe = () => {
         like to chat please get in touch.
       </h3>
 
-      <form
-        action="https://formspree.io/f/mgeqvoyy"
-        method="POST"
-        className="contact-form w-50 mx-5 d-flex flex-column"
-        onSubmit={formHandler}
-        id="contactForm"
-      >
-        <input
-          type="text"
-          name="name"
-          placeholder="Full name"
-          maxLength="30"
-          className="contactInput mb-4 p-3 border-0 border-bottom"
-          required
-        />
-        <input
-          type="email"
-          name="email"
-          placeholder="Email Address"
-          className="contactInput mb-4 p-3 border-0 border-bottom"
-          required
-        />
-        <span id="error-msg" />
-        <textarea
-          name="message"
-          rows="4"
-          placeholder="Enter text here"
-          maxLength="500"
-          className="contactInput mb-4 border-0 p-3"
-          required
-        />
-        <Button type="submit" className="repo-btn w-50">Get in touch</Button>
+      <form ref={form} onSubmit={sendEmail} className="d-flex flex-column w-100">
+
+        <input type="text" name="user_name" className="my-4 border-0 border-bottom p-3" placeholder="Full name" />
+
+        <input type="email" name="user_email" className="mb-4 border-0 border-bottom p-3" placeholder="Email" />
+
+        <textarea name="message" className="mb-4 border-0 border-bottom p-3" placeholder="Enter your message" />
+
+        <input type="submit" value="Send" className="w-25 btn resume-btn" />
       </form>
 
     </Container>
