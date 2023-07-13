@@ -10,9 +10,9 @@ const ContactMe = () => {
 
     emailjs.sendForm('service_wrwrx1n', 'template_20a4qgw', form.current, 'l2uDpBhzXwXLjdziX')
       .then((result) => {
-        console.log(result.text);
+        alert(`${result}Message sent successfully!`);
       }, (error) => {
-        console.log(error.text);
+        alert(error.text);
       });
   };
   return (
