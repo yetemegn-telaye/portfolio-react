@@ -36,9 +36,11 @@ const HeadlineSection = () => (
           <div className="mt-2">
             <p className="sub-title mb-2">I`am a Full-stack Developer</p>
             <p className="intro">
-              I can help you build a product , feature or website Look through
-              some of my work and experience! If you like what you see and have
-              a project you need coded, don’t hestiate to contact me.
+              I have a passion for creating outstanding digital experience.
+              I can help you craft amazing products based on your ideas. Let&apos;s work
+              together to make your digital dream come true. Together, let&apos;s make your
+              digital dream a reality. Let&apos;s connect so that we may embark on this new
+              journey together.
             </p>
           </div>
         </div>
