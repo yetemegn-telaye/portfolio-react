@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+:root {
+  --dark-color: #19535f;
+  --main-color: #d7c9aa;
+  --button-color: #7b2d26;
+  --light-color: #f0f3f5;
+}
+
+.navbar {
+  background-color: var(--dark-color);
+  border-bottom: 1px solid var(--main-color);
+}
+
+.navbar-brand {
+  color: var(--light-color) !important;
+}
+
+.nav-link {
+  color: var(--light-color) !important;
+}
+
+.nav-link:hover {
+  color: var(--main-color) !important;
+}
+
+.home-container {
+  height: 100vh;
+}
+
+.headline-section {
+  background-color: var(--dark-color);
+}
+
+.social-icon:hover {
+  transform: scale(1.4);
+  transition: all 0.3s;
+  cursor: pointer;
+  background-color: var(--button-color);
+  padding: 0.25rem;
+  border-radius: 1rem;
+}
+
+.sub-title {
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  overflow: scroll;
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret 0.75s step-end infinite;
+}
+
+.headline-intro .sub-title {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 44px;
+  color: var(--light-color);
+  padding-right: 40px;
+}
+
+.headline-title {
+  color: var(--main-color);
+  font-family: 'Crete Round', serif;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 82px;
+}
+
+.intro {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--light-color);
+}
+
+.works-title h2 {
+  font-family: "Crete Round", serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 52px;
+}
+
+.work-card {
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.proj-img {
+  width: 100% !important;
+  height: 300px !important;
+}
+
+.repo-btn {
+  background-color: var(--button-color) !important;
+  color: var(--light-color) !important;
+  border-color: var(--button-color-color) !important;
+}
+
+.repo-btn:hover {
+  background-color: var(--light-color) !important;
+  border-color: var(--button-color) !important;
+  color: var(--button-color) !important;
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+.demo-btn {
+  background-color: var(--light-color) !important;
+  color: var(--button-color) !important;
+  border-color: var(--button-color) !important;
+}
+
+.demo-btn:hover {
+  background-color: goldenrod !important;
+  color: var(--light-color) !important;
+  border-color: var(--button-color-color) !important;
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+.about-section {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+
+.resume-btn {
+  background-color: goldenrod !important;
+  border: none !important;
+  font-weight: bold !important;
+}
+
+.resume-btn:hover {
+  background-color: var(--light-color) !important;
+  color: #19535f !important;
+  border: 1px solid goldenrod !important;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  gap: 9rem;
+}
+
+.my-skills {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.skill-title {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem !important;
+}
+
+.skill img {
+  max-width: 4rem;
+  max-height: 2rem;
+}
+
+.contact-h3 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: var(--dark-color);
+  text-align: start;
+}
+
+.contact-h3:hover {
+  transform: translateX(-9px);
+  transition: all 0.6s;
+  cursor: pointer;
+}
+
+textarea {
+  background-color: #fbf8f7;
+}
+
+.footer-social-icons {
+  border: 1px solid #dfe1e6;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to { border-color: transparent; }
+  40% { border-color: var(--text-color); }
+}
