@@ -9,11 +9,15 @@ const ContactMe = () => {
     e.preventDefault();
 
     emailjs.sendForm('service_wrwrx1n', 'template_20a4qgw', form.current, 'l2uDpBhzXwXLjdziX')
-      .then((result) => {
-        alert(`${result}Message sent successfully!`);
-      }, (error) => {
-        alert(error.text);
-      });
+      .then((result) => (
+        <div>
+          {result.status}
+        </div>
+      ), (error) => (
+        <div>
+          {error.text}
+        </div>
+      ));
   };
   return (
     <Container className="contact-section d-flex flex-column flex-md-column flex-lg-row p-5">
@@ -25,11 +29,11 @@ const ContactMe = () => {
 
       <form ref={form} onSubmit={sendEmail} className="d-flex flex-column w-100">
 
-        <input type="text" name="user_name" className="my-4 border-0 border-bottom p-3" placeholder="Full name" />
+        <input type="text" name="user_name" className="my-4 border-0 border-bottom p-3" placeholder="Full name" required />
 
-        <input type="email" name="user_email" className="mb-4 border-0 border-bottom p-3" placeholder="Email" />
+        <input type="email" name="user_email" className="mb-4 border-0 border-bottom p-3" placeholder="Email" required />
 
-        <textarea name="message" className="mb-4 border-0 border-bottom p-3" placeholder="Enter your message" />
+        <textarea name="message" className="mb-4 border-0 border-bottom p-3" placeholder="Enter your message" required />
 
         <input type="submit" value="Send" className="w-25 btn resume-btn" />
       </form>
