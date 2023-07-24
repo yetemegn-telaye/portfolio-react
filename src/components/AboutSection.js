@@ -20,6 +20,8 @@ import ChromeDevLogo from '../images/logos/chromedevtoolslogo.png';
 import WebpackLogo from '../images/logos/webpacklogo.png';
 import PostmanLogo from '../images/logos/postmanlogo.png';
 import NpmLogo from '../images/logos/npmlogo.png';
+import FigmaLogo from '../images/logos/figmalogo.png';
+import CanvaLogo from '../images/logos/canvalogo.png';
 
 const AboutSection = () => (
   <Container fluid className="p-0 about-section">
@@ -127,11 +129,11 @@ const AboutSection = () => (
           <h3 className="skill-title">Design</h3>
           <div className="my-skills">
             <div className="skill">
-              <img src={RubyLogo} alt="ruby" />
+              <img src={FigmaLogo} alt="figma" />
               <p>Figma</p>
             </div>
             <div className="skill">
-              <img src={RorLogo} alt="rubyonrails" />
+              <img src={CanvaLogo} alt="canva" />
               <p>Canva</p>
             </div>
           </div>
