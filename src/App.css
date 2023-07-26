@@ -132,6 +132,9 @@
 .resume-btn {
   background-color: goldenrod !important;
   border: none !important;
+  border-radius: 12px;
+  text-decoration: none;
+  color: white;
   font-weight: bold !important;
 }
 
