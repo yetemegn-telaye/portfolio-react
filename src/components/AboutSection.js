@@ -22,7 +22,7 @@ import PostmanLogo from '../images/logos/postmanlogo.png';
 import NpmLogo from '../images/logos/npmlogo.png';
 import FigmaLogo from '../images/logos/figmalogo.png';
 import CanvaLogo from '../images/logos/canvalogo.png';
-import resume from '../Full-stack Yetemegn L..pdf';
+import resume from '../YL.FrontendDeveloper.pdf';
 
 const AboutSection = () => (
   <Container fluid className="p-0 about-section">

@@ -34,7 +34,7 @@ const HeadlineSection = () => (
             I`m Yetemegn
           </h1>
           <div className="mt-2">
-            <p className="sub-title mb-2">I`am a Full-stack Developer</p>
+            <p className="sub-title mb-2">I`am a Frontend Developer</p>
             <p className="intro">
               I have a passion for creating outstanding digital experience.
               I can help you craft amazing products based on your ideas. Let&apos;s work
