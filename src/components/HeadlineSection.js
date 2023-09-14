@@ -33,7 +33,7 @@ const HeadlineSection = () => (
             <br />
             I`m Yetemegn
           </h1>
-          <div className="mt-2">
+          <div className="sub-div mt-2">
             <p className="sub-title mb-2">I`am a Frontend Developer</p>
             <p className="intro">
               I have a passion for creating outstanding digital experience.

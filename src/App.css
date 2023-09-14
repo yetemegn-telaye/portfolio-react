@@ -46,8 +46,12 @@
   border-radius: 1rem;
 }
 
+.sub-div{
+  width: 79%;
+}
+
 .sub-title {
-  border-right: 0.15em solid orange; /* The typwriter cursor */
+  border-right: 0.1em solid orange; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.15em; /* Adjust as needed */
@@ -58,8 +62,8 @@
 }
 
 .headline-intro .sub-title {
-  font-weight: 500;
-  font-size: 2rem;
+  font-weight: 700;
+  font-size: 1rem;
   line-height: 44px;
   color: var(--light-color);
   padding-right: 40px;
@@ -130,11 +134,11 @@
 }
 
 .resume-btn {
-  background-color: goldenrod !important;
+  background-color: #ffc107 !important;
   border: none !important;
-  border-radius: 12px;
+  border-radius: 7px;
   text-decoration: none;
-  color: white;
+  color: black;
   font-weight: bold !important;
 }
 

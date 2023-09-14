@@ -2,8 +2,9 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { Button } from 'react-bootstrap';
 
 const Header = () => (
   <>
@@ -18,11 +19,12 @@ const Header = () => (
               About
             </Nav.Link>
             <Nav.Link href="/contact">Contact</Nav.Link>
-            <Nav.Link href="/contact">
+            {/* <Nav.Link href="/contact">
               <FontAwesomeIcon icon={faEnvelope} beatFade />
-            </Nav.Link>
+            </Nav.Link> */}
           </Nav>
         </Navbar.Collapse>
+        <Button type="button" href="/contact" className="btn-warning mx-5">Hire Me</Button>
       </Container>
     </Navbar>
   </>
