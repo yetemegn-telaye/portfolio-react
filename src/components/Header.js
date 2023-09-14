@@ -14,7 +14,8 @@ const Header = () => (
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
           <Nav>
-            <Nav.Link href="/">Portfolio</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/work">works</Nav.Link>
             <Nav.Link href="/about">
               About
             </Nav.Link>
@@ -23,8 +24,8 @@ const Header = () => (
               <FontAwesomeIcon icon={faEnvelope} beatFade />
             </Nav.Link> */}
           </Nav>
+          <Button type="button" href="/contact" className="btn-warning mx-md-5 my-xs-3">Hire Me</Button>
         </Navbar.Collapse>
-        <Button type="button" href="/contact" className="btn-warning mx-5">Hire Me</Button>
       </Container>
     </Navbar>
   </>

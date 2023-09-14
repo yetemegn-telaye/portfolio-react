@@ -6,7 +6,7 @@
 }
 
 :root {
-  --dark-color: #19535f;
+  --dark-color: #061826;
   --main-color: #d7c9aa;
   --button-color: #7b2d26;
   --light-color: #f0f3f5;
@@ -121,7 +121,7 @@
 }
 
 .demo-btn:hover {
-  background-color: goldenrod !important;
+  background-color: #ffc107 !important;
   color: var(--light-color) !important;
   border-color: var(--button-color-color) !important;
   transform: scale(1.1);
@@ -200,6 +200,7 @@ textarea {
 
 .footer-social-icons {
   border: 1px solid #dfe1e6;
+  background-color: var(--dark-color);
 }
 
 @keyframes typing {
